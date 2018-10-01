@@ -1,11 +1,6 @@
 require('babel/register');
 var http = require('http');
 
-var http = require("http");
-setInterval(function() {
-    http.get("https://cardspal.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
-
 try {
   var fs = require('fs');
   var pathToken = process.env.SLACK_POKER_BOT_TOKEN;
