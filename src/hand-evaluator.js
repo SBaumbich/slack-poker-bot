@@ -18,6 +18,11 @@ class HandEvaluator {
     let bestHand = { handType: 0, handRank: 0 };
     let winners = [];
     let cardArray = null;
+    
+    var http = require("http");
+    setInterval(function() {
+      http.get("https://cardspal.herokuapp.com");
+    }, 30000); // every 5 minutes (300000)
 
     for (let player of players) {
       let sevenCardHand = [...playerHands[player.id], ...board];
