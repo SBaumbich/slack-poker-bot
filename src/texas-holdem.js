@@ -31,7 +31,7 @@ class TexasHoldem {
 
     // Each player starts with 100 big blinds.
     for (let player of this.players) {
-      player.chips = this.bigBlind * 100;
+      player.chips = this.bigBlind * 50;
     }
   }
 
